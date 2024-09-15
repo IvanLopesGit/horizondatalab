@@ -1,0 +1,38 @@
+img {
+    border: none;
+}
+
+.tableauPlaceholder {
+    position: relative;
+
+    &-custo-tempo {
+        width: 50rem !important;
+        height: 28rem !important;
+
+        @media (max-width: 768px) {
+            width: 100% !important;
+            height: 35rem !important;
+        }
+
+        @media (max-width: 480px) {
+            width: 100% !important;
+            height: 35rem !important;
+        }
+    }
+}
+
+.tableauViz-custo-tempo {
+    display: none;
+    width: 50rem !important;
+    height: 30rem;
+
+    @media (max-width: 768px) {
+        width: 90% !important;
+        height: 38rem !important;
+    }
+
+    @media (max-width: 480px) {
+        width: 90% !important;
+        height: 38rem !important;
+    }
+}

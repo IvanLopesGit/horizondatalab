@@ -1,0 +1,42 @@
+img {
+    border: none;
+}
+
+.tableauPlaceholder {
+    position: relative;
+
+    &-kpi {
+        width: 50rem !important;
+        height: 16rem !important;
+
+        @media (max-width: 768px) {
+            width: 100% !important;
+            height: 34rem !important;
+        }
+
+        @media (max-width: 480px) {
+            width: 100% !important;
+            height: 34rem !important;
+        }
+    }
+}
+
+.tableauViz-kpi {
+    display: none;
+    width: 50rem !important;
+    height: 30rem;
+
+    @media (max-width: 768px) {
+        width: 90% !important; 
+        height: 38rem !important;
+    }
+
+    @media (max-width: 480px) {
+        width: 90% !important;
+        height: 38rem !important;
+    }
+}
+
+.tab-zone tab-widget, .tabSuppressVizTooltipsAndOverlays, .tabZone-color {
+    display: none !important;
+}

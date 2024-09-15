@@ -1,0 +1,45 @@
+.about-content-container {
+    text-align: left;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+
+    div {
+        margin-bottom: 20px 20px 0 20px;
+
+        p {
+            margin: 0;
+            padding-bottom: 0.8rem;
+        }
+    }
+
+    .titles {
+        font-size: 1.3rem;
+        font-weight: 700;
+
+        @media (max-width: 768px) {
+            font-size: 1.1rem;
+        }
+    }
+
+    .text-options {
+        line-height: 1.4rem;
+        letter-spacing: 0.08rem;
+
+        @media (max-width: 768px) {
+            line-height: 1.2rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 1rem 15% 0 8%;
+    }
+
+    @media (max-width: 480px) {
+        padding: 1rem 13% 0 8%;
+    }
+}
+
+.bold {
+    font-weight: 600;
+}

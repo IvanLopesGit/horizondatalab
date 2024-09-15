@@ -1,0 +1,42 @@
+img {
+    border: none;
+}
+
+.tableauPlaceholder {
+    position: relative;
+
+    &-por-produto {
+        width: 37rem !important;
+        height: 15rem !important;
+
+        @media (max-width: 768px) {
+            width: 90% !important;
+            height: 16rem !important;
+        }
+
+        @media (max-width: 480px) {
+            width: 90% !important;
+            height: 16rem !important;
+        }
+    }
+}
+
+.tableauViz {
+    display: none;
+    width: 27rem;
+
+    &-por-produto {
+        height: 16.5rem;
+        width: 33rem !important;
+
+        @media (max-width: 768px) {
+            width: 75% !important;
+            height: 38rem !important;
+        }
+
+        @media (max-width: 480px) {
+            width: 75% !important;
+            height: 38rem !important;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.pricing-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4rem;
+    letter-spacing: 0.08rem;
+
+    @media (max-width: 768px) {
+        padding: 0 9% 0 8%;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0 14% 0 8%;
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.titles {
+    font-size: 2rem;
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+        line-height: 2rem !important;
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+        line-height: 2rem !important;
+        font-size: 1.5rem;
+    }
+}
+
+.subtitles {
+    font-size: 1.2rem;
+
+    &-contrast {
+        font-size: 1.6rem;
+
+        @media (max-width: 768px) {
+            font-size: 1.3rem;
+        }
+    }
+
+    &-info {
+        font-size: 1.1rem;
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+        }
+    }
+}
+
+.padding {
+    padding-top: 2rem;
+}

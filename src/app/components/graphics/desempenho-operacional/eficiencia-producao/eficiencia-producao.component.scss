@@ -1,0 +1,38 @@
+img {
+    border: none;
+}
+
+.tableauPlaceholder {
+    position: relative;
+
+    &-eficiencia-prod {
+        width: 50rem !important;
+        height: 28rem !important;
+
+        @media (max-width: 768px) {
+            width: 100% !important;
+            height: 45rem !important;
+        }
+
+        @media (max-width: 480px) {
+            width: 100% !important;
+            height: 45rem !important;
+        }
+    }
+}
+
+.tableauViz-eficiencia-prod {
+    display: none;
+    width: 50rem !important;
+    height: 30rem;
+
+    @media (max-width: 768px) {
+        width: 90% !important;
+        height: 48rem !important;
+    }
+
+    @media (max-width: 480px) {
+        width: 90% !important;
+        height: 48rem !important;
+    }
+}

@@ -1,0 +1,38 @@
+img {
+    border: none;
+}
+
+.tableauPlaceholder {
+    position: relative;
+
+    &-receita-despesas {
+        width: 50rem !important;
+        height: 28rem !important;
+
+        @media (max-width: 768px) {
+            width: 100% !important;
+            height: 42rem !important; 
+        }
+
+        @media (max-width: 480px) {
+            width: 100% !important;
+            height: 42rem !important; 
+        }
+    }
+}
+
+.tableauViz-receita-despesas {
+    display: none;
+    width: 65rem !important;
+    height: 30rem;
+
+    @media (max-width: 768px) {
+        width: 90% !important;
+        height: 42rem !important; 
+    }
+
+    @media (max-width: 480px) {
+        width: 90% !important;
+        height: 42rem !important; 
+    }
+}

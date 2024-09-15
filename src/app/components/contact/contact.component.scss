@@ -1,0 +1,35 @@
+.contacts-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+
+    img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.whatsapp {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-bottom: 1.7rem;
+}
