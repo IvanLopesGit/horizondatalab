@@ -1,0 +1,15 @@
+.graph_content {
+
+    .chart_content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        .chart {
+            // max-width: 100%;
+            width: 31.25rem;
+            height: 25rem;
+        }
+    }
+
+}

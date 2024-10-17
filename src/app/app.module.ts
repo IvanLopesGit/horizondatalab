@@ -19,6 +19,8 @@ import { KpiComponent } from './components/graphics/desempenho-operacional/kpi/k
 import { RelacaoCustoTempoComponent } from './components/graphics/desempenho-operacional/relacao-custo-tempo/relacao-custo-tempo.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { ServicesComponent } from './components/services/services.component';
+import { AnalysisHubComponent } from './components/analysis-hub/analysis-hub.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,13 +40,16 @@ import { ServicesComponent } from './components/services/services.component';
     KpiComponent,
     RelacaoCustoTempoComponent,
     PricingComponent,
-    ServicesComponent
+    ServicesComponent,
+    AnalysisHubComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    provideHttpClient()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
