@@ -1,5 +1,16 @@
 <div class="graph_content">
-    <input type="file" (change)="onFileSelected($event)" />
+
+    <div class="button-container">
+        <div>
+            <input class="input-container" id="fileInput" type="file" (change)="onFileSelected($event)" />
+            <label for="fileInput" class="button">Selecione o Arquivo</label>
+        </div>
+        <span class="filename" *ngIf="fileName">{{ fileName }}</span>
+        <span *ngIf="apiData?.message" class="successMsg">{{apiData?.message}}</span>
+        <span *ngIf="errorMsg.errorMsg" class="errorMgs">{{errorMsg.errorMsg}}</span>
+        <span *ngIf="errorMsg.invalid_columns" class="errorMgs">{{errorMsg.invalid_columns}}</span>
+        
+    </div>
 
     <div class="chart_content">
         <div class="chart">

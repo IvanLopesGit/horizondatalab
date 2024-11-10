@@ -1,37 +1,32 @@
-<!DOCTYOPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
     <head>
         <!-- Título da Página -->
-    <title>Horizon Data Labs</title>
-    <!-- Meta Description -->
-    <meta name="description" content="Horizon Data Labs é uma consultoria de dados especializada em transformar dados em decisões estratégicas para empresas.">
-    <!-- Meta Keywords -->
-    <meta name="keywords" content="consultoria de dados, análise de dados, Tableau, soluções de dados, Horizon Data Labs">
-    <!-- Meta Charset -->
-    <meta charset="UTF-8">
-    <!-- Meta Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta Robots -->
-    <meta name="robots" content="index, follow">
-    <!-- Meta Autor -->
-    <meta name="author" content="Horizon Data Labs">
+        <title>Horizon Data Labs</title>
+        <!-- Meta Description -->
+        <meta name="description" content="Horizon Data Labs é uma consultoria de dados especializada em transformar dados em decisões estratégicas para empresas.">
+        <!-- Meta Keywords -->
+        <meta name="keywords" content="consultoria de dados, análise de dados, Tableau, soluções de dados, Horizon Data Labs">
+        <!-- Meta Charset -->
+        <meta charset="UTF-8">
+        <!-- Meta Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Meta Robots -->
+        <meta name="robots" content="index, follow">
+        <!-- Meta Autor -->
+        <meta name="author" content="Horizon Data Labs">
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png">
-        <title>
-            Horizon Data Labs
-        </title>
+        <!-- Favicon -->
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+        <!-- Estilos -->
         <link rel="stylesheet" href="app.component.scss">
     </head>
-    <body class="">
-        <header>
-            <div class="header-content">Horizon Data Labs
-                <p>Capacitando sua empresa com insights valiosos</p>
-            </div>
-        </header>
+    <body>
+        <!-- Componente de menu separado -->
         <app-menu></app-menu>
+
+        <!-- Conteúdo principal dinâmico -->
         <router-outlet></router-outlet>
-        <div class="right-side-gradient"></div>
+
     </body>
 </html>

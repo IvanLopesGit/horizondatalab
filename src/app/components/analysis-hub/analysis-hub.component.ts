@@ -6,6 +6,11 @@ interface HTMLCanvasElementWithChart extends HTMLCanvasElement {
   chart?: Chart; // Adicionando a propriedade 'chart' opcional
 }
 
+interface ErrorMsg {
+  errorMsg: string,
+  invalid_columns: string
+}
+
 @Component({
   selector: 'app-analysis-hub',
   templateUrl: './analysis-hub.component.html',
@@ -13,12 +18,17 @@ interface HTMLCanvasElementWithChart extends HTMLCanvasElement {
 })
 
 export class AnalysisHubComponent implements OnInit {
+  fileName: string | null = null;
   
   @ViewChild('chartCanvas', { static: true }) chartCanvas!: ElementRef<HTMLCanvasElement>;
 
   public apiData: any;
   private selectedFile: File | null = null;
   private chartInstance: any; 
+  public errorMsg: ErrorMsg = {
+    errorMsg: '',
+    invalid_columns: ''
+  };
 
   constructor(
     private service: DataPipelineService
@@ -28,24 +38,28 @@ export class AnalysisHubComponent implements OnInit {
   }
 
   ngOnInit(): void {
-      // this.fetchData();
   }
 
   onFileSelected(event: any): void {
     const file: File = event.target.files[0];
     if (file) {
+      this.fileName = file.name;
       this.selectedFile = file;
       this.fetchData(this.selectedFile)
     }
   }
 
   fetchData(file: any): void {
-    this.service.getGraph(file).subscribe({
+    this.service.uploadCsv(file).subscribe({
       next: (data) => {
         this.apiData = data;
+        console.log('data', this.apiData)
         this.renderGraph(data);
       },
       error: (error) => {
+        const errorResponse = error.error;
+        this.errorMsg.errorMsg = errorResponse.error;
+        this.errorMsg.invalid_columns = errorResponse.invalid_columns
         console.log('Erro ao chamar a API', error);
       },
       complete: () => {
